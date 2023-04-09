@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 02 - Formularios en HTML</title>
+    <style>
+        body{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        main{
+           display: flex;
+           justify-content: center;
+           height: 100vh;
+           flex-wrap: wrap;
+           align-content: center;
+           justify-items: center;
+           flex-direction: column;
+           width: 50%;
+
+        }
+        main :nth-child(1){
+            width: 250px;
+            justify-self: center;
+            
+        }
+        h1{
+            display: flex;
+            flex-direction: column;
+            flex-flow: column;
+            font-size: 20px;
+        }
+        input, textarea{
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        input{
+            height: 20px;
+            box-shadow: 5px 2px 8px black;
+        }
+        .form{  
+            display: flex;
+            align-items: center;
+            flex-direction: column; 
+            gap: 8px; 
+            justify-self: center;    
+        }
+        .label{
+            font-size: 16px;
+            align-self  :start;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Ejercicio 02 - Formularios en HTML</h1>
+    <form action="/" class="form">
+        <label for="nombre" class="label">Nombre</label>
+            <input type="name" id="nombre">
+        <label for="Edad" class="label">Edad</label>
+            <input type="number" id="Edad">
+        <label for="frase" class="label">Frase favorita</label>
+            <textarea name="frase" id="frase" cols="20" rows="5"></textarea>
+        <button type="submit" >Enviar</button>
+        <button type="reset" >Resetear</button>
+    </form>
+    </main>
+</body>
+</html>
